@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -121,6 +125,7 @@ h2 {
 /*ABOUT*/
 /*---------------------------------------------*/
 .who-i-am {
+  background-color: #fff;
   min-height: 100vh;
   text-align: center;
   background-image: url('../Images/background.png');
@@ -167,7 +172,7 @@ h2 {
 /*WORK*/
 /*---------------------------------------------*/
 .my-work {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f7f7f7;
   text-align: center;
   padding-top: 50px;
@@ -188,6 +193,18 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .my-work img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .my-work img {
+    width: 100%;
+  }
 }
 
 .my-work img:hover {
