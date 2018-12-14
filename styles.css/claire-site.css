@@ -213,7 +213,6 @@ h2 {
 /*---------------------------------------------*/
 .bottom-container {
   background-color: #FDF2F2;
-  height: 30vh;
   text-align: center;
   border-top: 1px solid #e29696;
 }
@@ -229,7 +228,7 @@ h2 {
 .btn {
   text-decoration: none;
   background: #FFFFFF;
-  font-family: Roboto-Light;
+  font-family: 'Roboto';
   font-size: 24px;
   color: #EE5858;
   letter-spacing: 2.3px;
@@ -243,7 +242,7 @@ h2 {
   color: #525252;
   font-size: 0.75rem;
   padding: 30px 0;
-  font-family: Roboto-Light;
+  font-family: 'Roboto';
 }
 
 .row {
