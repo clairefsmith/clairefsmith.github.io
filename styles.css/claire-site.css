@@ -19,9 +19,9 @@ hr {
 
 /*----------HEADINGS-----------------------*/
 h1 {
+  color: #e29696;
   font-family: 'Abril Fatface', cursive;
   font-weight: lighter;
-  color: #e29696;
   font-size: 8em;
   letter-spacing: 5px;
   padding: 200px 0 0 100px;
