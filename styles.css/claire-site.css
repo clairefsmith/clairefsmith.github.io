@@ -91,7 +91,7 @@ h2 {
 /*---------------------------------------------*/
 .top-container {
   font-size: 16px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #FDF2F2;
 }
 
@@ -121,7 +121,7 @@ h2 {
 /*ABOUT*/
 /*---------------------------------------------*/
 .who-i-am {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   background-image: url('../Images/background.png');
   background-size: cover;
@@ -202,9 +202,21 @@ h2 {
 }
 
 .icons {
-  width: 25%;
+  width: 30em;
 }
 
+@media screen and (max-width: 768px) {
+  .icons {
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .icons {
+    width: 15em;
+    margin-bottom: 5em;
+  }
+}
 
 
 
