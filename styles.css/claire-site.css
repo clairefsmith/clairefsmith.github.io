@@ -31,8 +31,8 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto Light', sans-serif;
-  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   font-size: 3em;
   color: #525252;
 }
@@ -74,8 +74,8 @@ h2 {
   padding: 5px 10px 10px 0;
   color: #525252;
   text-decoration: none;
-  font-family: Roboto-Light;
-  font-weight: lighter;
+  font-family: 'Roboto';
+  font-weight: 100;
   margin-right: 10px;
 }
 
@@ -139,7 +139,7 @@ h2 {
 }
 
 .who-i-am p {
-  font-family: Roboto-Light;
+  font-family: 'Roboto';
   width: 50%;
   margin: 50px auto;
   font-size: 20px;
@@ -195,8 +195,8 @@ h2 {
 }
 
 .my-work p {
-  font-family: 'Roboto Light', sans-serif;
-  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin-top: 10px;
   color: #525252;
 }
