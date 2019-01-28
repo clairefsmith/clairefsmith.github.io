@@ -17,7 +17,9 @@ hr {
   margin: 30px auto;
 }
 
-/*----------HEADINGS-----------------------*/
+/*---------------------------------------------*/
+/*HEADINGS*/
+/*---------------------------------------------*/
 h1 {
   color: #e29696;
   font-family: 'Abril Fatface', cursive;
@@ -172,6 +174,7 @@ h2 {
 /*WORK*/
 /*---------------------------------------------*/
 .my-work {
+  margin: 100px;
   min-height: 100vh;
   background-color: #f7f7f7;
   text-align: center;
@@ -189,22 +192,10 @@ h2 {
 }
 
 .my-work img {
-  width: 50%;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  .my-work img {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .my-work img {
-    width: 100%;
-  }
 }
 
 .my-work img:hover {
@@ -216,6 +207,35 @@ h2 {
   font-weight: 100;
   margin-top: 10px;
   color: #525252;
+}
+
+.container {
+  /* Flexbox fallback */
+  display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+
+  /* Grid implementation */
+  display: grid;
+  grid-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.item {
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  margin: 1rem;
+  width: 20rem;
+  min-width: 15rem;
+}
+
+@supports (display: grid) {
+  .item {
+    height: initial;
+    margin: unset;
+    width: initial;
+    min-width: initial;
+  }
 }
 
 .icons {
@@ -234,8 +254,6 @@ h2 {
     margin-bottom: 5em;
   }
 }
-
-
 
 /*---------------------------------------------*/
 /*FOOTER*/
@@ -272,28 +290,4 @@ h2 {
   font-size: 0.75rem;
   padding: 30px 0;
   font-family: 'Roboto';
-}
-
-.row {
-  margin: 25px 100px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  width: 33.3%;
-  margin: 40px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .column {
-    width: 50%;
-    margin: 20px 0;
-  }
-}
-
-@media all and (max-width: 575px) {
-  .column {
-    width: 100%;
-  }
 }
