@@ -221,6 +221,12 @@ h2 {
   width: 33.33%;
 }
 
+@media screen and (max-width: 575px) {
+  .item {
+    width: 100%;
+  }
+}
+
 .item a {
   display: inline-block;
   height: 100%;
