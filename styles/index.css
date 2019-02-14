@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #FFFFFF;
 }
 
 * {
@@ -15,15 +15,16 @@ body {
 hr {
   width: 30%;
   margin: 30px auto;
+  border: 1px solid #1c1c1c;
 }
 
 /*---------------------------------------------*/
 /*HEADINGS*/
 /*---------------------------------------------*/
 h1 {
-  color: #e29696;
-  font-family: 'Abril Fatface', cursive;
-  font-weight: lighter;
+  color: #1c1c1c;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
   font-size: 8em;
   letter-spacing: 5px;
   padding: 200px 0 0 100px;
@@ -37,19 +38,18 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
   font-size: 3em;
-  color: #525252;
+  color: #1c1c1c;
 }
 
 /*---------------------------------------------*/
 /*NAVIGATION*/
 /*---------------------------------------------*/
 .navbar {
-  background-color: #f7f7f7;
+  background-color: #f8f4f3;
   height: 80px;
-  border-bottom: 1px solid #e29696;
 }
 
 .main-nav {
@@ -78,10 +78,10 @@ h2 {
 .main-nav li a:link,
 .main-nav li a:visited {
   padding: 5px 10px 10px 0;
-  color: #525252;
+  color: #1c1c1c;
   text-decoration: none;
   font-family: 'Roboto';
-  font-weight: 100;
+  font-weight: bold;
   margin-right: 10px;
 }
 
@@ -98,12 +98,12 @@ h2 {
 .top-container {
   font-size: 16px;
   min-height: 100vh;
-  background-color: #FDF2F2;
+  background-color: #fff5ed;
 }
 
 .top-container h3 {
   font-family: 'Roboto', sans-serif;
-  color: #b03030;
+  color: #1c1c1c;
   font-size: 3em;
   font-weight: 100;
   padding-top: 75px;
@@ -127,10 +127,9 @@ h2 {
 /*ABOUT*/
 /*---------------------------------------------*/
 .who-i-am {
-  background-color: #fff;
+  background-color: #f8f4f3;
   min-height: 100vh;
   text-align: center;
-  background-image: url('../images/background.png');
   background-size: cover;
   overflow: hidden;
 }
@@ -142,15 +141,16 @@ h2 {
 }
 
 .who-i-am h2 {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .who-i-am p {
   font-family: 'Roboto';
+  font-weight: 300;
   width: 50%;
   margin: 50px auto;
   font-size: 20px;
-  color: #525252;
+  font-color: #1C1C1C;
 }
 
 @media screen and (max-width: 768px) {
@@ -174,11 +174,9 @@ h2 {
 /*WORK*/
 /*---------------------------------------------*/
 .my-work {
-  margin: 100px;
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background-color: #FFFFFF;
   text-align: center;
-  padding-top: 50px;
 }
 
 @media all and (max-width: 575px) {
@@ -193,9 +191,7 @@ h2 {
 
 .my-work img {
   width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
+  height: 100%;
 }
 
 .my-work img:hover {
@@ -206,36 +202,29 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   margin-top: 10px;
-  color: #525252;
+  color: #1c1c1c;
 }
 
 .container {
-  /* Flexbox fallback */
   display: flex;
 	flex-wrap: wrap;
+  -ms-align-items: center;
+  align-items: center;
   justify-content: center;
-
-  /* Grid implementation */
-  display: grid;
-  grid-gap: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  background-color: #e1efde;
 }
 
 .item {
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  margin: 1rem;
-  width: 20rem;
-  min-width: 15rem;
+  font-size: 0;
+  line-height: 0;
+  list-style: none;
+  width: 33.33%;
 }
 
-@supports (display: grid) {
-  .item {
-    height: initial;
-    margin: unset;
-    width: initial;
-    min-width: initial;
-  }
+.item a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }
 
 .icons {
@@ -259,14 +248,13 @@ h2 {
 /*FOOTER*/
 /*---------------------------------------------*/
 .bottom-container {
-  background-color: #FDF2F2;
+  background-color: #fff5ed;
   text-align: center;
-  border-top: 1px solid #e29696;
 }
 
 .bottom-container h3 {
   font-family: 'Roboto', sans-serif;
-  color: #EE5858;
+  color: #1c1c1c;
   font-size: 3em;
   font-weight: 100;
   padding: 30px 0 30px 0;
@@ -277,16 +265,16 @@ h2 {
   background: #FFFFFF;
   font-family: 'Roboto';
   font-size: 24px;
-  color: #EE5858;
+  color: #1c1c1c;
   letter-spacing: 2.3px;
   text-align: center;
   border-radius: 40px;
   padding: 10px 20px 10px 20px;
-  border: 1px solid grey;
+  border: 1px solid #1c1c1c;
 }
 
 .copyright {
-  color: #525252;
+  color: #1c1c1c;
   font-size: 0.75rem;
   padding: 30px 0;
   font-family: 'Roboto';
